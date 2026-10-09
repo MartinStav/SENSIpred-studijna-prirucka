@@ -1,0 +1,23 @@
+[
+  {
+    "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "score": 0.47455066673771645,
+    "prediction": 0,
+    "max_train_tanimoto": 0.4482758620689655
+  },
+  {
+    "smiles": "CCO",
+    "canonical_smiles": "CCO",
+    "score": 0.41204300525082205,
+    "prediction": 0,
+    "max_train_tanimoto": 0.4166666666666667
+  },
+  {
+    "smiles": "O=CC=Cc1ccccc1",
+    "canonical_smiles": "O=CC=Cc1ccccc1",
+    "score": 0.666149779740723,
+    "prediction": 1,
+    "max_train_tanimoto": 1.0
+  }
+]

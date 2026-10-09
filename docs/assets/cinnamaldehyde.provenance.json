@@ -1,0 +1,5 @@
+{
+  "method": "RDKit MolDraw2DSVG",
+  "smiles": "O=CC=Cc1ccccc1",
+  "purpose": "educational chemical depiction; colors are annotations, not predictions"
+}

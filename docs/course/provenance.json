@@ -1,0 +1,16 @@
+{
+  "dataset": "Modeling skin sensitization based on bone marrow-derived dendritic cells (BMDC) assay",
+  "doi": "10.57745/PPAMKY",
+  "landing_url": "https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/PPAMKY",
+  "download_url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/188601",
+  "access_date": "2026-10-10",
+  "file": "All_Sensitization_Labels.sdf",
+  "sha256": "a177071881a0287cfbbd24f8cc490023695fab8cbc8feec09b93e5a54373d464",
+  "license": {
+    "name": "etalab 2.0",
+    "uri": "https://spdx.org/licenses/etalab-2.0.html",
+    "iconUri": "https://entrepot.recherche.data.gouv.fr/assets/licence-ouverte.png"
+  },
+  "endpoint": "Class_DPRA_ICE; author-interpreted binary DPRA label from ICE; not human sensitization",
+  "raw_records": 118
+}

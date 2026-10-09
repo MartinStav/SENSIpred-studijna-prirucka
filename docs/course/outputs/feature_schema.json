@@ -1,0 +1,11 @@
+{
+  "input": "canonical isomeric SMILES; single component; no tautomer/salt normalization",
+  "Morgan": {
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": false
+  },
+  "descriptors": "MolWt MolLogP TPSA exported for inspection only; models use fingerprints",
+  "threshold": 0.5,
+  "seed": 42
+}

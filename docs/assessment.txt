@@ -1,0 +1,131 @@
+1. [Mechanizmus / Základ] Čo priamo reprezentuje DPRA?
+1) Reaktivitu s modelovými peptidmi
+2) Pravdepodobnosť alergie konkrétneho človeka
+3) Proliferáciu T buniek
+Riešenie: 1. DPRA pokrýva chemickú reaktivitu súvisiacu s väzbou na proteíny. Celý proces zahŕňa ďalšie udalosti.
+
+2. [Mechanizmus / Aplikácia] Negatívny test bez metabolickej aktivácie pri prohaptene znamená:
+1) Zaručenú bezpečnosť
+2) Potenciálne obmedzenie testu pre túto látku
+3) Neplatnosť všetkých in vitro metód
+Riešenie: 2. Prohapten môže vyžadovať biologickú premenu. Posudzuj konkrétne pokrytie testu.
+
+3. [Mechanizmus / Základ] Ester od kyseliny rozlíšiš podľa:
+1) Farby kresby
+2) Prítomnosti kruhu
+3) Okolia C(=O): –O–C verzus –OH
+Riešenie: 3. Obe obsahujú karbonyl, ale ester má kyslík spojený s ďalším uhlíkom.
+
+4. [Mechanizmus / Kritika] Prítomnosť mechanistického alertu:
+1) Podporuje hypotézu, ktorá potrebuje kontext a dôkazy
+2) Dokazuje pozitívny humánny patch test
+3) Určuje presnú dávku reakcie
+Riešenie: 1. Alert nie je univerzálny verdikt; reakcia závisí od okolia a podmienok.
+
+5. [Dáta / Základ] Chýbajúci assay výsledok je:
+1) Negatívny
+2) Nezmeraný alebo nedostupný údaj
+3) Pozitívny s nízkou istotou
+Riešenie: 2. Missing sa nemá meniť na biologickú triedu.
+
+6. [Dáta / Aplikácia] Konfliktné duplicity pred splitom:
+1) Rozdelíš medzi train a test
+2) Vyberieš náhodný štítok
+3) Preskúmaš a spracuješ podľa dokumentovaného pravidla
+Riešenie: 3. Rozpor potrebuje assay a study kontext, pričom surové záznamy ostávajú zachované.
+
+7. [Dáta / Kritika] DPRA a LLNA štítky v jednom stĺpci bez pôvodu:
+1) Miešajú rôzne referenčné ciele
+2) Zaručujú lepší model
+3) Sú správne, ak oba nazveme toxicita
+Riešenie: 1. Endpoint, assay a podmienky musia byť rozlíšené pred integráciou dát.
+
+8. [Dáta / Aplikácia] Kanonický SMILES vyrieši všetko vrátane tautomerov a solí?
+1) Áno
+2) Nie, štandardizácia vyžaduje ďalšie explicitné pravidlá
+3) Áno, ak je reťazec krátky
+Riešenie: 2. Kanonizácia zápisu sa nerovná úplnej chemickej normalizácii.
+
+9. [Validácia / Aplikácia] Selektor príznakov fitovaný pred CV na všetkých štítkoch:
+1) Je bežná bezpečná optimalizácia
+2) Len zrýchľuje model
+3) Spôsobuje leakage
+Riešenie: 3. Selektor musí byť súčasťou tréningovej pipeline v každom folde.
+
+10. [Validácia / Základ] 25 % skupín v GroupShuffleSplit znamená:
+1) Približný podiel skupín, nie zaručený podiel molekúl
+2) Presne 25 % látok
+3) Presne 25 % pozitívnych
+Riešenie: 1. Veľkosti skupín sa líšia; skontroluj skutočné počty a triedy.
+
+11. [Validácia / Kritika] Test má 7 látok. Jedna chyba navyše:
+1) Nemá žiadny vplyv
+2) Môže výrazne zmeniť metriky
+3) Dokazuje chybu knižnice
+Riešenie: 2. Malý test je nestabilný; vždy reportuj počty a obmedzenia.
+
+12. [Validácia / Aplikácia] Prah pre finálny report zvolíš:
+1) Podľa najlepšej testovej accuracy
+2) Až po pozretí všetkých testových chýb
+3) Na vývojových dátach pred finálnym testom
+Riešenie: 3. Test nesmie riadiť výber parametrov, reprezentácie ani prahu.
+
+13. [Validácia / Kritika] Scaffold holdout zo zdroja A je:
+1) Chemicky oddelený interný holdout, nie automaticky externý zdroj
+2) Vždy externá validácia
+3) Potvrdenie regulačnej akceptácie
+Riešenie: 1. Externá nezávislosť vyžaduje ďalšie odlíšenie pôvodu a procesu získania dát.
+
+14. [Výsledky / Aplikácia] Pri 90 negatívnych a 10 pozitívnych označí model všetko negatívne. BA je:
+1) 0,9
+2) 0,5
+3) 1,0
+Riešenie: 2. Citlivosť 0, specificita 1; ich priemer je 0,5.
+
+15. [Výsledky / Základ] Kalibrácia skúma:
+1) Počet atómov
+2) Rýchlosť služby
+3) Zhodu skóre s pozorovanou frekvenciou triedy
+Riešenie: 3. Dobrá diskriminácia nie je automaticky dobrá kalibrácia.
+
+16. [Výsledky / Kritika] Confidence z TOXIpRED bez definície:
+1) Nemôžeme automaticky čítať ako záruku správnosti
+2) Je vždy p(positive)
+3) Je vždy humánna pravdepodobnosť
+Riešenie: 1. Potrebujeme typ skóre, triedu, spôsob výpočtu a validačný dôkaz.
+
+17. [Výsledky / Aplikácia] Matches known compound znamená:
+1) Validovanú AD
+2) Rozpoznanú identitu; nie automaticky členstvo v tréningu alebo AD
+3) Pozitívny experiment
+Riešenie: 2. Identifikačný zdroj a tréningová doména sú odlišné veci.
+
+18. [Výsledky / Kritika] Lokálny príspevok MolWt pri aspiríne je:
+1) Globálna dôležitosť všetkých modelov
+2) Kauzálny dôkaz reakcie
+3) Vysvetlenie výstupu pre konkrétnu látku podľa metódy
+Riešenie: 3. Lokálne atribúcie závisia od modelu, referencie, korelácií a vysvetľovaného výstupu.
+
+19. [Integrácia / Aplikácia] Model a runtime majú rovnaký počet vstupov:
+1) Stále treba overiť poradie, význam a verzie
+2) To stačí na správnu inferenciu
+3) Zaručuje rovnaké skóre
+Riešenie: 1. Počet stĺpcov nestačí; pri zámene môže služba ticho predikovať nesprávne.
+
+20. [Integrácia / Základ] Katalóg má päť assay modelov senzitizácie. Výber určuje:
+1) Iba test_type
+2) Jednoznačné ID s assay a referenčným cieľom
+3) Prvá položka katalógu
+Riešenie: 2. Výber musí odlíšiť rôzne experimentálne ciele.
+
+21. [Integrácia / Kritika] AD zatiaľ nebola validovaná. Služba má:
+1) Ukázať zelené bezpečné
+2) Doplniť inside AD podľa ľubovoľného prahu
+3) Uviesť neustanovenú AD a oddelene diagnostickú podobnosť
+Riešenie: 3. Stav nesmie deklarovať dôkaz, ktorý model nemá.
+
+22. [Integrácia / Aplikácia] Negatívny XGB Corrosion pre aspirín:
+1) Nevypovedá priamo o senzitizačnom endpointe
+2) Dokazuje negatívny DPRA
+3) Potvrdzuje celkovú bezpečnosť
+Riešenie: 1. Záver platí pre konkrétny model a jeho referenčný cieľ.
